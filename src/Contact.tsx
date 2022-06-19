@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faGithub } from "@fortawesome/free-brands-svg-icons";
+// import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 class Contact extends Component {
   render() {
     return (
@@ -14,14 +14,14 @@ class Contact extends Component {
           target="_blank"
           rel="noreferrer"
         >
-          <FontAwesomeIcon icon={faGithub} /> Github
+          {/* <FontAwesomeIcon icon={faGithub} /> Github */}
         </a>
 
         <a
           className="contact link"
           href="mailto:grzegorz.siedlecki@outlook.com"
         >
-          <FontAwesomeIcon icon={faEnvelope} /> Email
+          {/* <FontAwesomeIcon icon={faEnvelope} /> Email */}
         </a>
       </section>
     );

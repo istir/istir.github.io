@@ -1,4 +1,4 @@
-interface HSL {
+export interface HSL {
   h: number;
   s: number;
   l: number;
@@ -32,7 +32,9 @@ export default class RandomColor {
     }
   }
 
-  static HSLtoString(color: HSL) {
+  static HSLtoString(color: HSL, opacity?: number) {
+    if (opacity)
+      return `hsla(${color.h}deg, ${color.s}%, ${color.l}%, ${opacity})`;
     return `hsl(${color.h}deg, ${color.s}%, ${color.l}%)`;
   }
 }

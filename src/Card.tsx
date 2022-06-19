@@ -22,7 +22,7 @@ export default class Card extends React.Component<IProps> {
         // }}
       >
         <h1>{this.props.name}</h1>
-        <p>{this.props.text}</p>
+        {/* <p>{this.props.text}</p> */}
         <img
           className="project-image shadow-near"
           src={this.props.imageSrc}
