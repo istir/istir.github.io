@@ -7,6 +7,7 @@ import {
   Button,
   Collapse,
   Flex,
+  HStack,
   IconButton,
   Menu,
   MenuButton,
@@ -14,6 +15,7 @@ import {
   useColorModeValue,
   useDimensions,
   useDisclosure,
+  VStack,
 } from "@chakra-ui/react";
 import { FaChevronDown, FaGithub } from "react-icons/fa";
 import HeaderIcon from "./HeaderIcon";
@@ -170,6 +172,9 @@ export default function Header(): JSX.Element {
           refresh={props.refresh}
           loggedIn={props.user ? true : false}
         /> */}
+        <Box mt="16" mb="2" mx="1">
+          <HeaderIcons asColumn />
+        </Box>
       </Collapse>
     </Box>
   );

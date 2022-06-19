@@ -11,7 +11,10 @@ export default function Projects(props: ProjectsProps): JSX.Element {
   return (
     <Grid
       minH="100vh"
-      gridTemplateColumns={"repeat(auto-fit, minmax(400px, 1fr))"}
+      gridTemplateColumns={{
+        base: "auto",
+        md: "repeat(auto-fit, minmax(400px, 1fr))",
+      }}
       gap="2"
     >
       <ProjectCard

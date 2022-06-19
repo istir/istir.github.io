@@ -71,6 +71,7 @@ export default function About() {
           alignItems={"center"}
           marginTop="10"
           gap="2"
+          marginBottom={"10"}
         >
           <Text fontWeight={"bold"}>Contact</Text>
           <Link

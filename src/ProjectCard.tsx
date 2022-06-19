@@ -69,7 +69,7 @@ export default function ProjectCard(props: ProjectCardProps): JSX.Element {
       as={"a"}
       href={props.url}
       transition="all 0.2s ease-in-out"
-      _hover={{ md: { transform: "scale(1.05)" } }}
+      _hover={{ md: { transform: "scale(1.02)" } }}
     >
       {renderImage(props.image)}
       <Flex padding="2" pt="0" alignItems={"top"} flexDir="column">
