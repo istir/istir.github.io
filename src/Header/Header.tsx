@@ -166,16 +166,24 @@ export default function Header(): JSX.Element {
           </Flex>
         </Stack>
       </Flex>
-      <Collapse in={isOpen} animateOpacity>
-        {/* <HamburgerOptions
+      <Box
+        pos="fixed"
+        left="0"
+        right="0"
+        bg={useColorModeValue("light.primary1", "dark.primary1")}
+        display={{ base: "block", md: "none" }}
+      >
+        <Collapse in={isOpen} animateOpacity>
+          {/* <HamburgerOptions
           currentUser={props.user}
           refresh={props.refresh}
           loggedIn={props.user ? true : false}
         /> */}
-        <Box mt="16" mb="2" mx="1">
-          <HeaderIcons asColumn />
-        </Box>
-      </Collapse>
+          <Box mt="16" mb="2" mx="1">
+            <HeaderIcons asColumn />
+          </Box>
+        </Collapse>
+      </Box>
     </Box>
   );
 }

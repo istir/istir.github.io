@@ -11,7 +11,7 @@ import { FaEnvelope, FaGithub } from "react-icons/fa";
 import stylish from "./images/stylish.png";
 export default function About() {
   return (
-    <Flex margin="2" justifyContent={"center"} mt="2">
+    <Flex margin={{ base: 4, md: 10 }} justifyContent={"center"} mt="2">
       <Box
         textAlign={"justify"}
         maxW={{ base: "100vw", md: "80vw", lg: "60vw" }}
