@@ -10,7 +10,8 @@ interface ProjectsProps {}
 export default function Projects(props: ProjectsProps): JSX.Element {
   return (
     <Grid
-      minH="100vh"
+      my="10"
+      mx={{ base: "0", md: "10" }}
       gridTemplateColumns={{
         base: "auto",
         md: "repeat(auto-fit, minmax(400px, 1fr))",
@@ -46,7 +47,7 @@ export default function Projects(props: ProjectsProps): JSX.Element {
         name="Animal"
         alt="Animal main page"
         image={animal}
-        url="https://animal.vercel.app"
+        url="https://animal-istir.vercel.app"
       >
         <Box>
           <Text>
